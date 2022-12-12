@@ -56,7 +56,9 @@ export function App() {
               <Combobox.Input
                 autoComplete="off"
                 className="pl-3 pr-8 py-1.5 border border-neutral-200 rounded bg-neutral-0"
+                onBlur={() => setSearchTerm('')}
                 onChange={onInputChange}
+                value={searchTerm}
               />
               <Combobox.Button className="absolute right-2 inset-y-0">
                 <SelectorIcon aria-hidden className="h-5 w-5" />
